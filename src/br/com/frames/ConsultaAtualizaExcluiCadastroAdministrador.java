@@ -422,7 +422,7 @@ public class ConsultaAtualizaExcluiCadastroAdministrador extends javax.swing.JFr
         boolean semImagem = false;
         boolean camposNaoPreenchidos = false;
         boolean senhaNaoConfirmada = false;
-
+// comentario
         if (imagemAdmLabel.getIcon() == null) {
             semImagem = true;
             JOptionPane.showMessageDialog(this, "Adicione uma imagem");

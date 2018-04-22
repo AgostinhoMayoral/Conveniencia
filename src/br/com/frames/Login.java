@@ -16,7 +16,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 import org.hibernate.SQLQuery;
 import org.hibernate.Transaction;
-
+// login usuario
 /**
  *
  * @author tinho

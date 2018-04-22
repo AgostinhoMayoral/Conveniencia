@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/03/2018 12:11:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.hibernate.mapping.CadastroUsuario" table="cadastro_usuario" catalog="bancoconveniencia0" optimistic-lock="version">
+        <id name="idcadastroUsuario" type="int">
+            <column name="idcadastro_usuario" />
+            <generator class="increment" />
+        </id>
+        <property name="nomeUsuario" type="string">
+            <column name="nome_usuario" not-null="true" />
+        </property>
+        <property name="rgUsuario" type="string">
+            <column name="rg_usuario" length="45" not-null="true" />
+        </property>
+        <property name="cpfUsuario" type="string">
+            <column name="cpf_usuario" length="45" not-null="true" />
+        </property>
+        <property name="telefoneUsuario" type="string">
+            <column name="telefone_usuario" length="45" not-null="true" />
+        </property>
+        <property name="celularUsuario" type="string">
+            <column name="celular_usuario" length="45" not-null="true" />
+        </property>
+        <property name="dataNascimentoUsuario" type="string">
+            <column name="data_nascimento_usuario" length="45" not-null="true" />
+        </property>
+        <property name="sexoUsuario" type="string">
+            <column name="sexo_usuario" length="45" not-null="true" />
+        </property>
+        <property name="enderecoUsuario" type="string">
+            <column name="endereco_usuario" not-null="true" />
+        </property>
+        <property name="observacaoUsuario" type="string">
+            <column name="observacao_usuario" not-null="true" />
+        </property>
+        <property name="emailUsuario" type="string">
+            <column name="email_usuario" not-null="true" />
+        </property>
+        <property name="senhaUsuario" type="string">
+            <column name="senha_usuario" not-null="true" />
+        </property>
+        <property name="idAdministradorCadastroUsuario" type="int">
+            <column name="id_administrador_cadastro_usuario" not-null="true" />
+        </property>
+        <property name="imagemUsuario" type="binary">
+            <column name="imagem_usuario" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

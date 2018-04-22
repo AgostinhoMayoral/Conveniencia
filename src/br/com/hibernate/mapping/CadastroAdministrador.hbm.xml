@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/03/2018 12:11:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.hibernate.mapping.CadastroAdministrador" table="cadastro_administrador" catalog="bancoconveniencia0" optimistic-lock="version">
+        <id name="idcadastroAdministrador" type="int">
+            <column name="idcadastro_administrador" />
+            <generator class="increment" />
+        </id>
+        <property name="nomeAdministrador" type="string">
+            <column name="nome_administrador" not-null="true" />
+        </property>
+        <property name="rgAdministrador" type="string">
+            <column name="rg_administrador" length="45" not-null="true" />
+        </property>
+        <property name="cpfAdministrador" type="string">
+            <column name="cpf_administrador" length="45" not-null="true" />
+        </property>
+        <property name="telefoneAdministrador" type="string">
+            <column name="telefone_administrador" length="45" not-null="true" />
+        </property>
+        <property name="celularAdministrador" type="string">
+            <column name="celular_administrador" length="45" not-null="true" />
+        </property>
+        <property name="dataNascimentoAdministrador" type="string">
+            <column name="data_nascimento_administrador" length="45" not-null="true" />
+        </property>
+        <property name="sexoAdministrador" type="string">
+            <column name="sexo_administrador" length="45" not-null="true" />
+        </property>
+        <property name="enderecoAdministrador" type="string">
+            <column name="endereco_administrador" not-null="true" />
+        </property>
+        <property name="observacaoAdministrador" type="string">
+            <column name="observacao_administrador" />
+        </property>
+        <property name="emailAdministrador" type="string">
+            <column name="email_administrador" not-null="true" />
+        </property>
+        <property name="senhaAdministrador" type="string">
+            <column name="senha_administrador" not-null="true" />
+        </property>
+        <property name="idAdministradorCadastrador" type="int">
+            <column name="id_administrador_cadastrador" not-null="true" />
+        </property>
+        <property name="imagemAdministrador" type="binary">
+            <column name="imagem_administrador" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/03/2018 12:11:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.hibernate.mapping.CadastroProduto" table="cadastro_produto" catalog="bancoconveniencia0" optimistic-lock="version">
+        <id name="idcadastroProduto" type="int">
+            <column name="idcadastro_produto" />
+            <generator class="increment" />
+        </id>
+        <property name="nomeProduto" type="string">
+            <column name="nome_produto" not-null="true" />
+        </property>
+        <property name="quantidadeProduto" type="string">
+            <column name="quantidade_produto" length="45" not-null="true" />
+        </property>
+        <property name="tipoProduto" type="string">
+            <column name="tipo_produto" not-null="true" />
+        </property>
+        <property name="descricaoProduto" type="string">
+            <column name="descricao_produto" not-null="true" />
+        </property>
+        <property name="marcaProduto" type="string">
+            <column name="marca_produto" not-null="true" />
+        </property>
+        <property name="pesoKgProduto" type="string">
+            <column name="peso_kg_produto" length="45" />
+        </property>
+        <property name="valorCompraProduto" type="string">
+            <column name="valor_compra_produto" length="45" not-null="true" />
+        </property>
+        <property name="valorVendaProduto" type="string">
+            <column name="valor_venda_produto" length="45" not-null="true" />
+        </property>
+        <property name="imagemProduto" type="binary">
+            <column name="imagem_produto" />
+        </property>
+        <property name="codigoBarrasProduto" type="string">
+            <column name="codigo_barras_produto" length="45" not-null="true" />
+        </property>
+        <property name="idDoAdministradorQueCadastrouProduto" type="int">
+            <column name="id_do_administrador_que_cadastrou_produto" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

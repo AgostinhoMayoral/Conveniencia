@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/03/2018 12:11:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.hibernate.mapping.HistoricoVendas" table="historico_vendas" catalog="bancoconveniencia0" optimistic-lock="version">
+        <id name="idhistoricoVendas" type="int">
+            <column name="idhistorico_vendas" />
+            <generator class="increment" />
+        </id>
+        <property name="dataHistoricoVendas" type="string">
+            <column name="data_historico_vendas" length="45" not-null="true" />
+        </property>
+        <property name="horaHistoricoVendas" type="string">
+            <column name="hora_historico_vendas" length="45" not-null="true" />
+        </property>
+        <property name="nrCupomHistoricoVendas" type="string">
+            <column name="nr_cupom_historico_vendas" length="45" not-null="true" />
+        </property>
+        <property name="listaHistoricoVendas" type="string">
+            <column name="lista_historico_vendas" not-null="true" />
+        </property>
+        <property name="totalPagoHistoricoVendas" type="string">
+            <column name="total_pago_historico_vendas" length="45" not-null="true" />
+        </property>
+        <property name="trocoHistoricoVendas" type="string">
+            <column name="troco_historico_vendas" length="45" not-null="true" />
+        </property>
+        <property name="idUsuarioHistoricoVendas" type="int">
+            <column name="id_usuario_historico_vendas" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

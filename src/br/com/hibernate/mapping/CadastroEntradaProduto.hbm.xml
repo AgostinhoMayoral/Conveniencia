@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/03/2018 12:11:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.hibernate.mapping.CadastroEntradaProduto" table="cadastro_entrada_produto" catalog="bancoconveniencia0" optimistic-lock="version">
+        <id name="idcadastroEntradaProduto" type="int">
+            <column name="idcadastro_entrada_produto" />
+            <generator class="increment" />
+        </id>
+        <property name="codigoBarrasEntradaProduto" type="string">
+            <column name="codigo_barras_entrada_produto" length="45" not-null="true" />
+        </property>
+        <property name="quantidadeEntradaProduto" type="string">
+            <column name="quantidade_entrada_produto" length="45" not-null="true" />
+        </property>
+        <property name="dataValidadeEntradaProduto" type="string">
+            <column name="data_validade_entrada_produto" length="45" not-null="true" />
+        </property>
+        <property name="fornecedorEntradaProduto" type="string">
+            <column name="fornecedor__entrada_produto" not-null="true" />
+        </property>
+        <property name="valorUnitarioEntradaProduto" type="string">
+            <column name="valor_unitario_entrada_produto" length="45" not-null="true" />
+        </property>
+        <property name="localEntradaProduto" type="string">
+            <column name="local_entrada_produto" not-null="true" />
+        </property>
+        <property name="dataEntradaProduto" type="string">
+            <column name="data_entrada_produto" length="45" not-null="true" />
+        </property>
+        <property name="horaEntradaProduto" type="string">
+            <column name="hora_entrada_produto" length="45" not-null="true" />
+        </property>
+        <property name="idAdministradorEntradaProduto" type="int">
+            <column name="id_administrador_entrada_produto" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
